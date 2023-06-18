@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/config.js"></script>
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body>
+    <div class="error">
+    </div>
+    <script type="text/javascript">
+      $(function() {
+        $.ajax({
+            url: `${cfg.HOST}${cfg.PORT}${cfg.GET_USER_PATH}?token=${localStorage.getItem("token")}`,
+            headers: {
+                "Access-Control-Request-Method": "GET",
+            },
+            type: "GET",
+            responseType: "application/json"
+        })
+        .done(function(resp) {
+          const data = JSON.parse(resp);
+            if (data.status != "OK")
+            {
+                localStorage.removeItem("token");
+                window.location.replace("/login");
+            }
+            else
+            {
+                window.location.replace("/home");
+            }
+        })
+        .fail(function() {
+          $(".error").load("../components/error.html");
+        });
+      })
+    </script>
+  </body>
+</html>

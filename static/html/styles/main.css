@@ -1,0 +1,105 @@
+body, html
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+  background: #CECECE;
+}
+
+.loading_img
+{
+  margin: 0 auto;
+}
+
+.error
+{
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: 250px;
+}
+
+.error_block
+{
+  color: white;
+  text-align: center;
+}
+
+a
+{
+  color: white;
+  text-decoration: none;
+}
+
+main
+{
+  margin: 50px auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #4B4B4B;
+  color: white
+}
+
+#loginBtn, #registerBtn
+{
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  background: black;
+  padding: 10px
+}
+
+#loginForm
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#loginForm h1, main h1
+{
+  text-align: center;
+}
+
+table
+{
+  margin: 0 auto;
+}
+
+
+input
+{
+  padding: 8px;
+}
+
+.usersTable
+{
+  margin: 15px auto;
+  border: 2px solid white;
+  width: 80%;
+}
+
+.usersTable > tr > td, .usersTable > tr > th
+{
+  border: 2px solid white;
+  width: 200px;
+}
+
+.actionsBlock
+{
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+#delBtn
+{
+  margin: 10px;
+}

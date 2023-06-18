@@ -1,0 +1,9 @@
+.header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #4B4B4B;
+}

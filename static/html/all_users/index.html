@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все пользователи</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <script src="scripts/jquery.js"></script>
+    <script src="./scripts/config.js"></script>
+    <script src="scripts/check_user.js"></script>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+      <h1 id="test">Все пользователи</h1>
+      <div class="actionsBlock">
+        <input type="number" name="id_del" id="id_del" placeholder="ID...">
+        <button type="button" name="delBtn" id="delBtn">Delete</button>
+        <input type="number" name="id_status" id="id_status" placeholder="ID...">
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+          <option value="0">0</option>
+        </select>
+        <button type="button" name="statusBtn" id="statusBtn">Set status</button>
+      </div>
+    </main>
+    <script src="../scripts/delete.js"></script>
+    <script src="../scripts/all_users.js"></script>
+    <script src="../scripts/header.js"></script>
+</body>
+</html>
